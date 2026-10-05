@@ -1,0 +1,31 @@
+# Java / Maven
+target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+appsettings.Local.json
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Operating systems
+.DS_Store
+Thumbs.db

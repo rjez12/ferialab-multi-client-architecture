@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10251f" />
+    <meta name="description" content="FeriaLab reúne proyectos académicos, evaluadores y resultados en una plataforma de evaluación." />
+    <title>FeriaLab — Proyectos que merecen ser vistos</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="FeriaLab, inicio"><span class="brand-icon">F<span>·</span></span><span>feria<span class="brand-light">lab</span></span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-active" href="#proyectos">Proyectos</a>
+        <a href="#convocatoria">Convocatoria</a>
+        <a href="#sobre">Acerca de</a>
+      </nav>
+      <a class="organizer-link" href="#convocatoria">Portal de organización <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="live-dot"></span> CONVOCATORIA ABIERTA <span class="eyebrow-divider">/</span> 2026</p>
+          <h1>Las ideas de hoy<br>mueven <em>el futuro.</em></h1>
+          <p class="hero-summary">Descubre proyectos creados por estudiantes. Explora soluciones, conoce a sus equipos y sigue su impacto.</p>
+          <a class="hero-link" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <div class="graphic-sun"></div><div class="graphic-orbit orbit-a"></div><div class="graphic-orbit orbit-b"></div>
+          <div class="graphic-arc arc-a"></div><div class="graphic-arc arc-b"></div><div class="graphic-arc arc-c"></div>
+          <div class="graphic-label label-top">IDEA <span>→</span> PROTOTIPO</div><div class="graphic-label label-bottom">EXPLORAR · CREAR · COMPARTIR</div>
+          <span class="graphic-spark spark-one">✳</span><span class="graphic-spark spark-two">✳</span>
+        </div>
+        <div class="hero-bottom"><span>FERIA DE INNOVACIÓN UNIVERSITARIA</span><span>MANAGUA · NICARAGUA</span></div>
+      </section>
+
+      <section class="call-section" id="convocatoria">
+        <div class="call-copy"><p class="eyebrow eyebrow-dark">LA CONVOCATORIA</p><h2>Una plataforma.<br><span>Muchas formas de resolver.</span></h2><p>FeriaLab organiza proyectos y evaluaciones con criterios claros. Los equipos comparten su trabajo; los evaluadores revisan cada propuesta con una rúbrica común.</p></div>
+        <div class="call-stats"><div><strong id="project-count">—</strong><span>proyectos</span></div><div><strong>04</strong><span>criterios de evaluación</span></div><div><strong>01</strong><span>comunidad académica</span></div><p class="demo-note" id="data-status" role="status">Cargando proyectos…</p></div>
+      </section>
+
+      <section class="projects-section" id="proyectos">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-dark">VITRINA DE PROYECTOS</p><h2>Ideas en movimiento<span class="heading-period">.</span></h2></div><p>Propuestas de tecnología, sostenibilidad y comunidad.</p></div>
+        <div class="project-toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar proyectos</span><input id="project-search" type="search" placeholder="Buscar una idea o categoría" autocomplete="off"></label><div class="filters" role="group" aria-label="Filtrar por categoría"><button type="button" class="filter active" data-category="Todas" aria-pressed="true">Todas</button><button type="button" class="filter" data-category="Tecnología" aria-pressed="false">Tecnología</button><button type="button" class="filter" data-category="Sostenibilidad" aria-pressed="false">Sostenibilidad</button><button type="button" class="filter" data-category="Comunidad" aria-pressed="false">Comunidad</button></div></div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos proyectos que coincidan con esa búsqueda.</p>
+        <p class="section-footnote">Los proyectos visibles son ejemplos de demostración; los datos reales vendrán de la API de FeriaLab.</p>
+      </section>
+
+      <section class="process-section" id="sobre">
+        <div class="process-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>Del primer boceto<br>al <em>próximo paso.</em></h2></div>
+        <div class="steps"><article><span>01</span><h3>Presenta</h3><p>Los equipos describen el reto, su propuesta y qué esperan aprender.</p></article><article><span>02</span><h3>Evalúa</h3><p>Los jueces revisan cada proyecto con los mismos criterios y comentarios útiles.</p></article><article><span>03</span><h3>Comparte</h3><p>La comunidad conoce resultados y encuentra ideas para seguir construyendo.</p></article></div>
+      </section>
+      <section class="closing"><span class="closing-star" aria-hidden="true">✳</span><p>Las buenas ideas crecen<br>cuando se <em>comparten.</em></p><a href="#inicio" aria-label="Volver al inicio">Volver arriba ↑</a></section>
+    </main>
+    <footer class="footer"><a class="brand brand-footer" href="#inicio"><span class="brand-icon">F<span>·</span></span><span>feria<span class="brand-light">lab</span></span></a><p>Plataforma demostrativa · Etapa inicial</p><a href="https://github.com/rjez12" target="_blank" rel="noreferrer">Proyecto en GitHub ↗</a></footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <form method="dialog"><button class="dialog-close" aria-label="Cerrar">×</button></form>
+      <p class="eyebrow eyebrow-dark" id="dialog-category">PROYECTO</p><h2 id="dialog-title"></h2><p id="dialog-summary"></p><div class="dialog-team"><span>Equipo</span><strong id="dialog-team"></strong></div><a id="dialog-link" class="dialog-link" target="_blank" rel="noreferrer">Conocer el proyecto <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>
